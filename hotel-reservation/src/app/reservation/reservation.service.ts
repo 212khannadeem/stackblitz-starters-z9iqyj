@@ -25,4 +25,14 @@ export class ReservationService {
   }
 
   // delete
+  deleteReservation(id: string) : void {
+    let index = this.reservations.findIndex(res=> res.id===id);
+    this.reservations.splice(index,1);
+  }
+
+  // update
+  updateReservation(newReservation: Reservation): void{
+    let index = this.reservations.findIndex(res=> res.id===newReservation.id);
+    this.reservations[index]= newReservation;
+  }
 }
