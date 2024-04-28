@@ -9,3 +9,4 @@ export const routes: Routes = [
     {path: "list", component: ReservationListComponent},
     {path: "new/:id", component: ReservationFormComponent}
 ];
+ 
