@@ -7,6 +7,6 @@ export const routes: Routes = [
     {path: "", component:HomeComponent},
     {path: "new", component:ReservationFormComponent},
     {path: "list", component: ReservationListComponent},
-    {path: "new/:id", component: ReservationFormComponent}
+    {path: "new/:id", component: ReservationFormComponent},
 ];
  
